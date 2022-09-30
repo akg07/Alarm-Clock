@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: grey;
+    background-image: linear-gradient(to right, rgba(59, 153, 154), rgb(152, 53, 240));
 }
 
 * {
@@ -67,4 +67,35 @@ body{
 
 .reset-alarm{
     background-color: coral;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#block{
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#block p:hover{
+    color: whitesmoke;
+}
+
+#block a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+#block a:hover{
+    color: white;
 }
