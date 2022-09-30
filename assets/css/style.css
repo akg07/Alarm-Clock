@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main container of the alarm clock */
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* current time box  */
+#current-time{
+    /* border: 1px solid red; */
+    font-size: 10vw;
+    text-align: center;
+    margin: 10px;
+}
+
+
+#get-time{
+    /* border: 1px solid blue; */
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#time-input{
+    width: 200px;
+}
+
+/* set and reset button container */
+.controls{
+    /* border: 1px solid purple; */
+    margin-top: 15px;
+    padding: 5px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.btn{
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.set-alarm{
+    background-color: dodgerblue;
+}
+
+.reset-alarm{
+    background-color: coral;
+}
