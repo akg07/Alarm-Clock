@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, rgba(59, 153, 154), rgb(152, 53, 240));
+    /* background-image: linear-gradient(to right, rgba(59, 153, 154), rgb(152, 53, 240)); */
 }
 
 * {
@@ -68,6 +68,39 @@ body{
 .reset-alarm{
     background-color: coral;
 }
+
+
+#alarm-list{
+    border: 2px solid purple;
+    width: 35%;
+    margin: 30px auto;
+}
+
+.alarm-list-container{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.alarm-list-container .alarm-time{
+    border: 1px solid blue;
+    width: 60%;
+    height: 40px;
+}
+
+.alarm-list-container .btn-delete{
+    border: 1px solid black;
+    width: 70px;
+    height: 30px;
+    background-color: darkorange;
+    color: white;
+    border-radius: 5px;
+}
+
+
 
 #footer{
     position: absolute;
