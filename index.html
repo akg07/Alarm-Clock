@@ -12,35 +12,49 @@
 </head>
 <body>
     
-    <div id="container">
-        <!-- current time will be fill out by js -->
-        <div id="current-time"></div>
-        <div id="get-time">
-            <input id="time-input" type="datetime-local" name="Alarm Time" onchange="setAlarmTime(this.value)">
-            
-            <div class="controls">
-                <button onclick="setAlarm()" class="btn set-alarm">Set Alarm</button>
-                <button onclick="resetAlarm()" class="btn reset-alarm">reset Alarm</button>
+    <main >
+        <!-- LOCAL CLOCK CONTAINER -->
+        <div class="container">
+            <div class="clock-body">
+                <div id="clock" ></div>
             </div>
         </div>
-
-        <div id="alarm-list">
-            <ul class="alarm-list-container">
-                <div class="alarm-time"></div>
-                <button class="btn-delete">Delete</button>
+        <!-- SELECT ALARM TIME FORM -->
+        <div class="container">
+            <div class="row">
+            <form>
+                <div class="input_container">
+                
+                <!-- time input field -->
+                <div class="alarm_clock  ">
+                    <input id="alarm_input" type="datetime-local" step="2"  required />
+                </div>
+                <!-- submit button  -->
+                <div class="submit_time">
+                    <button id="submit_alarm_time" type="submit"><i class="fas fa-plus-circle"> </i>  Add Alarm</button>
+                    <button id="reset_alarm">Reset Alarm</button>
+                </div>
+                </div>
+            </form>
+            </div>
+            <!-- form end -->
+        </div>
+        <!--  alarm list container -->
+        <div class="container">
+            <h3 class="label">Current Alarms</h3>
+            <div class="alarms_list_container">
+            <ul id="alarms_ul" class="fa-ul">
+                <!-- <li class="alarms-li">
+                    Alarm Time
+                    <button  type="submit" class='deleteAlarm button'>Delete</button> 
+                </li> -->
             </ul>
+            </div>
+            <!-- end list container -->
         </div>
-    </div>
+        </main>
     
-    <footer id="footer">
-        <div id="block">
-            <p>All rights reserved <span>&#169;</span>2022 </p>
-            <p>Created By Aayush Kumar Gupta</p>
-            <p><a href="https://github.com/akg07/Alarm-Clock">Want to contribute?<i class="fa-brands fa-github"></i></a></p>
-        </div>
-    </footer>
-    
-    <!-- external js script file -->
+        <!-- Custom SCRIPT -->
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
