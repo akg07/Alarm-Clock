@@ -10,5 +10,5 @@ A web alarm clock by using HTML, CSS, Vanila JS
 - mobile friendly
 
 
-Click on link to view 
+Live Demo: 
 https://alarm-clock-akg.netlify.app/
